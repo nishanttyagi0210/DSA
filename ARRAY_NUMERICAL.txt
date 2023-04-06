@@ -1,0 +1,78 @@
+#include<stdio.h>
+#include<conio.h>
+void onedimensional();
+void twodimensional();
+void main()
+{
+
+//This is a program which is capable to solve the array index problem
+//All values inserted by the user
+
+  int ch;
+   printf("Enter the choice");
+   scanf("%d",&ch);
+
+	if(ch==1)
+	{
+		onedimensional();
+	}
+
+	if(ch==2)
+	{
+
+		twodimensional();
+	}
+  getch();
+  }
+
+void onedimensional()
+{
+	int ba,a,loc;
+	printf("Enter the base address");
+	scanf("%d",&ba);
+
+	printf("Enter the location find");
+	scanf("%d",&loc);
+
+	a=ba+4*loc;
+
+	printf("Final ans is %d",a);
+
+
+
+}
+
+void twodimensional()
+{      // int arr[50][50];
+	int ba,a,loc;
+	int i , j,l2,l1,c;
+	printf("Enter the base address");
+	scanf("%d",&ba);
+
+	printf("Enter the column");
+	scanf("%d",&c);
+
+	printf("Enter the l1");
+	scanf("%d",&l1);
+
+	printf("Enter the l2");
+	scanf("%d",&l2);
+
+		printf("Enter the i");
+	scanf("%d",&i);
+
+	printf("Enter the j");
+	scanf("%d",&j);
+
+
+
+	 a= ba+4*(c*(i-l1)+(j-l2));
+	printf("Ans is %d",a);
+
+
+
+
+
+
+
+}
